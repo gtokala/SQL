@@ -48,6 +48,8 @@ select trim('reddy' from '1redd govardhan reddy tokala 1eddy')
 ,trim('reddy' from 'reddyy govardhan reddy tokala reddyy')
 ,trim('reddy' from 'rreddy govardhan reddy tokala rreddy')
 ,trim('redy' from 'rreddry govardhan reddy tokala rreddyy')
+,trim('red' from 'redrose for  govardhan reddy')
+,trim('red' from 'rreddry govardhan reddy tokala rreddyy')
 
 /*output
 1redd govardhan reddy tokala 1	
@@ -57,4 +59,10 @@ govardhan reddy tokala
 govardhan reddy tokala	
 govardhan reddy tokala	
 govardhan reddy tokala
+ose for govardhan reddy	
+y govardhan reddy tokala rreddyy
 */
+--Following statement will return null
+select trim('red' from '')
+
+
